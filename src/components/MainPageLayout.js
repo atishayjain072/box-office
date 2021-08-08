@@ -1,8 +1,8 @@
 import React from 'react';
 import Navs from './Navs';
-import { Title } from './Title';
+import Title from './Title';
 
-export const MainPageLayout = ({ children }) => {
+const MainPageLayout = ({ children }) => {
   return (
     <div>
       <Title
@@ -10,7 +10,10 @@ export const MainPageLayout = ({ children }) => {
         subtitle="Are you looking for a movie or an actor?"
       />
       <Navs />
+
       {children}
     </div>
   );
 };
+
+export default MainPageLayout;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Title = ({ title, subtitle }) => {
+const Title = ({ title, subtitle }) => {
   return (
     <div>
       <h1>{title}</h1>
@@ -8,3 +8,5 @@ export const Title = ({ title, subtitle }) => {
     </div>
   );
 };
+
+export default Title;
